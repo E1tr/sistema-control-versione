@@ -51,6 +51,19 @@
                 }
             </script>
         </div>
+
+        <div class="seccion-js">
+            <h2>Modificar estilos CSS</h2>
+            <p id="parrafo-estilos">Este texto cambiará de color.</p>
+            <button onclick="cambiarEstilo()">Cambiar Color</button>
+            <p><strong>Explicación:</strong> Usamos document.getElementById('id').style.color para modificar el CSS del elemento.</p>
+            <script>
+                function cambiarEstilo() {
+                    document.getElementById("parrafo-estilos").style.color = "red";
+                    document.getElementById("parrafo-estilos").style.fontWeight = "bold";
+                }
+            </script>
+        </div>
     </main>
     <footer>
         <p>Footer del sitio - Práctica de Git Flow</p>
