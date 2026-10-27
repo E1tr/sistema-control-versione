@@ -39,6 +39,18 @@
                 }
             </script>
         </div>
+
+        <div class="seccion-js">
+            <h2>Modificar atributos HTML</h2>
+            <input type="text" id="mi-input" value="Texto bloqueado" disabled>
+            <button onclick="habilitarInput()">Habilitar Input</button>
+            <p><strong>Explicación:</strong> Usamos document.getElementById('id').removeAttribute('disabled') para quitar el atributo disabled del input.</p>
+            <script>
+                function habilitarInput() {
+                    document.getElementById("mi-input").removeAttribute("disabled");
+                }
+            </script>
+        </div>
     </main>
     <footer>
         <p>Footer del sitio - Práctica de Git Flow</p>
